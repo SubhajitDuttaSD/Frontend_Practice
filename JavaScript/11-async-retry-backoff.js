@@ -41,7 +41,7 @@ export async function retryWithBackoff(fn, options = {}) {
     }
 }
 
-run('12.1 async retry with backoff', async () => {
+run('11.1 async retry with backoff', async () => {
     let calls = 0;
 
     const flakyFetch = async () => {

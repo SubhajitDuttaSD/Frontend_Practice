@@ -42,7 +42,7 @@ export class LRUCache {
     }
 }
 
-run('10.1 LRU cache', () => {
+run('9.1 LRU cache', () => {
     const cache = new LRUCache(2);
 
     cache.put('a', 1);

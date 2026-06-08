@@ -27,7 +27,7 @@ export function flattenObject(obj, prefix = '', result = {}) {
     return result;
 }
 
-run('11.1 flatten object', () => {
+run('10.1 flatten object', () => {
     const nested = {
         a: 1,
         b: {

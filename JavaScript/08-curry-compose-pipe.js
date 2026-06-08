@@ -33,7 +33,7 @@ export function pipe(...fns) {
     return (value) => fns.reduce((acc, fn) => fn(acc), value);
 }
 
-run('9.1 curry', () => {
+run('8.1 curry', () => {
     const add = (a, b, c) => a + b + c;
     const curriedAdd = curry(add);
 
@@ -42,7 +42,7 @@ run('9.1 curry', () => {
     console.log(curriedAdd(1)(2, 3));    // 6
 });
 
-run('9.2 compose vs pipe', () => {
+run('8.2 compose vs pipe', () => {
     const double = (x) => x * 2;
     const increment = (x) => x + 1;
 

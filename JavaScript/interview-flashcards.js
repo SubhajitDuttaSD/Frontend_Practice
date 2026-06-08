@@ -1,7 +1,10 @@
 /* =============================================================================
- * INTERVIEW FLASHCARDS
+ * INTERVIEW FLASHCARDS & PRACTICE CHECKLIST
+ * Reference only — not part of the numbered topic sequence.
  * =============================================================================
  *
+ * FLASHCARDS
+ * ──────────
  *  1. What is closure?
  *     → Function that remembers variables from its lexical scope after outer fn returns.
  *
@@ -45,13 +48,10 @@
  *
  * 14. Why use exponential backoff?
  *     → Spreads retries apart to let transient failures recover and avoid hammering a service.
- * ============================================================================= */
-
-
-/* =============================================================================
- * CODING PRACTICE CHECKLIST
- * =============================================================================
  *
+ *
+ * CODING PRACTICE CHECKLIST
+ * ─────────────────────────
  *  [x] map, filter, reduce, forEach polyfills     → 06-array-methods.js
  *  [x] find, some, every, flat, reverse           → 06-array-methods.js
  *  [x] debounce, throttle                           → 07-utility-functions.js
@@ -61,8 +61,8 @@
  *  [x] flatten array, groupBy                        → 06-array-methods.js
  *  [x] memoize                                      → 07-utility-functions.js
  *  [x] counter using closure                        → 02-closures.js
- *  [x] curry, compose, pipe                         → 09-curry-compose-pipe.js
- *  [x] LRU cache                                    → 10-lru-cache.js
- *  [x] flatten object (nested keys → dot notation)  → 11-flatten-object.js
- *  [x] async retry with backoff                     → 12-async-retry-backoff.js
+ *  [x] curry, compose, pipe                         → 08-curry-compose-pipe.js
+ *  [x] LRU cache                                    → 09-lru-cache.js
+ *  [x] flatten object (nested keys → dot notation)  → 10-flatten-object.js
+ *  [x] async retry with backoff                     → 11-async-retry-backoff.js
  * ============================================================================= */
