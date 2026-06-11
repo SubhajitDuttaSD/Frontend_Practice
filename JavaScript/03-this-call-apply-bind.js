@@ -39,3 +39,16 @@ run('3.2 arrow vs regular method', () => {
     };
     obj4.show();
 });
+
+run('3.3 setTimeout with bind', () => {
+    const user = {
+        name: 'John',
+        show() {
+            console.log(this?.name ?? 'undefined (lost this)');
+        },
+    };
+
+    user.show();                            // John — direct call, this = user
+    setTimeout(user.show, 0);               // undefined (lost this) — passed as bare callback
+    setTimeout(user.show.bind(user), 0);    // John — bind locks this to user
+});

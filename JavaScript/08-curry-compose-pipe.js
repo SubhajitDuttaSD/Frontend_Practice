@@ -13,13 +13,17 @@
 
 import { run } from './_shared.js';
 
-/** Curries a function until all declared parameters are received */
+/**
+ * Curries a function — collect args until fn.length is reached, then invoke.
+ *
+ * add(1)(2)(3)  →  wait → wait → call add(1, 2, 3)
+ */
 export function curry(fn) {
     return function curried(...args) {
         if (args.length >= fn.length) {
-            return fn.apply(this, args);
+            return fn(...args); // all args ready
         }
-        return (...next) => curried.apply(this, args.concat(next));
+        return (...more) => curried(...args, ...more); // wait for more args
     };
 }
 
